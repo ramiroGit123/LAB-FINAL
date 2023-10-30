@@ -13,11 +13,9 @@ jobs:
       run: docker build . -t lab-final:1.0
     - name: Imagen Creada...1....
       run: echo imagen creada
-    - name: npm install
+    - name: Realiza install
       run: npm install
-    - name: npm test
+    - name: Realiza test
       run: npm test
-    - name: Echo ........
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+    - name: Deploy cluster
+      run: kubectl apply -f .\deployment.yaml
