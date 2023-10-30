@@ -12,6 +12,7 @@ jobs:
     - name: Crea imagen en Docker
       run: docker build . -t lab-final:1.0
     - name: Imagen Creada...1....
+      run: echo imagen creada
     - name: npm install
       run: npm install
     - name: npm test
