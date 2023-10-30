@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: lab-final
-        image: lab-final:1.0
+        image: ramiro1903176/lab-final:1.0
         ports:
         - containerPort: 3000
