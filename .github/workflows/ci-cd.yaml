@@ -17,5 +17,7 @@ jobs:
       run: npm install
     - name: Realiza test
       run: npm test
-    - name: Deploy cluster
+    - name: push docker hub
+      run: docker push ramiro1903176/lab-final:1.0
+    - name: Deploy cluster k3d
       run: kubectl apply -f .\deployment.yaml
