@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lab-final:1.0
+  labels:
+    app: lab-final
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: lab-final
+  template:
+    metadata:
+      labels:
+        app: lab-final
+    spec:
+      containers:
+      - name: lab-final
+        image: lab-final:1.0
+        ports:
+        - containerPort: 3000
