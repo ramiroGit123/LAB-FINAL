@@ -27,3 +27,5 @@ jobs:
     steps:
     - name: Deploy cluster k3d
       run: kubectl apply -f .\deployment.yaml
+    - name: Deploy services
+      run: kubectl apply -f .\clusterIp.yaml
