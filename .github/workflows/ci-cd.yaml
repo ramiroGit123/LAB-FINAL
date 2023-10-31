@@ -29,3 +29,5 @@ jobs:
       run: kubectl apply -f .\deployment.yaml
     - name: Deploy services
       run: kubectl apply -f .\clusterIp.yaml
+      - name: Deploy services
+      run: kubectl apply -f .\ingress.yaml
