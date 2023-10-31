@@ -27,7 +27,7 @@ jobs:
     steps:
     - name: Deploy cluster k3d
       run: kubectl apply -f .\deployment.yaml
-    - name: Deploy services
+    - name: Deploy services ClusterIp
       run: kubectl apply -f .\clusterIp.yaml
-      - name: Deploy services
+    - name: Deploy services Ingress
       run: kubectl apply -f .\ingress.yaml
